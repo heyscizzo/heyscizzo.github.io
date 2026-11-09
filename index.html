@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scizzo | Tools, Scraper & Content</title>
+    <style>
+        :root {
+            --bg-main: #0f1117;
+            --bg-card: #1a1d27;
+            --bg-card-hover: #242836;
+            --accent: #3b82f6;
+            --accent-b2b: #10b981;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: #2e3344;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-main);
+            color: var(--text-main);
+            display: flex;
+            justify-content: center;
+            padding: 40px 20px;
+            line-height: 1.5;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 480px;
+            text-align: center;
+        }
+
+        .avatar {
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--accent), var(--accent-b2b));
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 32px;
+            font-weight: 800;
+            color: #fff;
+            margin-bottom: 16px;
+            border: 3px solid var(--border);
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        .subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-bottom: 32px;
+        }
+
+        .section-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1.2px;
+            color: var(--text-muted);
+            text-align: left;
+            margin: 24px 0 10px 4px;
+            font-weight: 600;
+        }
+
+        .link-card {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 16px 20px;
+            margin-bottom: 12px;
+            text-decoration: none;
+            color: var(--text-main);
+            transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease;
+            text-align: left;
+        }
+
+        .link-card:hover {
+            background-color: var(--bg-card-hover);
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+
+        .link-card.highlight {
+            border-color: var(--accent-b2b);
+            background: linear-gradient(90deg, rgba(16, 185, 129, 0.1) 0%, var(--bg-card) 100%);
+        }
+
+        .link-content {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .link-title {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .link-desc {
+            font-size: 13px;
+            color: var(--text-muted);
+            margin-top: 2px;
+        }
+
+        .arrow {
+            font-size: 18px;
+            color: var(--text-muted);
+            margin-left: 12px;
+        }
+
+        footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        details {
+            margin-top: 12px;
+            background-color: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 10px 14px;
+            text-align: left;
+        }
+
+        summary {
+            cursor: pointer;
+            font-weight: 600;
+            text-align: center;
+            list-style: none;
+        }
+
+        .impressum-text {
+            margin-top: 10px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="avatar">S</div>
+        <h1>Scizzo</h1>
+        <p class="subtitle">Python Automation • Digitale Tools • Gaming & Tech</p>
+
+        <!-- BEREICH 1: APIFY & LEMON SQUEEZY -->
+        <div class="section-label">Scraper & Digitale Tools</div>
+
+        <!-- Apify Store Allgemein -->
+        <a href="https://apify.com/scizzo" target="_blank" rel="noopener" class="link-card highlight">
+            <div class="link-content">
+                <span class="link-title">🛠️ B2B Scraper & Automation Store (Apify)</span>
+                <span class="link-desc">Fertige Web-Scraper, automatisierte B2B-Lead-Pipelines & Daten-Tools</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <!-- Lemon Squeezy Store Allgemein -->
+        <a href="https://scizzo.lemonsqueezy.com/" target="_blank" rel="noopener" class="link-card">
+            <div class="link-content">
+                <span class="link-title">📦 Digitale Tools & TTRPG-Systeme (Shop)</span>
+                <span class="link-desc">KI-Prompt-Systeme, Pen & Paper Tools & Software-Vorlagen auf Lemon Squeezy</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <!-- BEREICH 2: CREATOR KANÄLE -->
+        <div class="section-label">Creator Kanäle</div>
+
+        <!-- 🔴 HIER ANPASSEN 2: YouTube Link einfügen -->
+        <a href="https://www.youtube.com/@Scizzo" target="_blank" rel="noopener" class="link-card">
+            <div class="link-content">
+                <span class="link-title">📺 YouTube</span>
+                <span class="link-desc">Retro-Gaming, Tech-Projekte, Trading Cards & Quiz-Shows</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <!-- 🔴 HIER ANPASSEN 3: Instagram Link einfügen -->
+        <a href="www.instagram.com/heyscizzo" target="_blank" rel="noopener" class="link-card">
+            <div class="link-content">
+                <span class="link-title">📸 Instagram</span>
+                <span class="link-desc">Reels, Shorts, Updates & Behind the Scenes</span>
+            </div>
+            <span class="arrow">↗</span>
+        </a>
+
+        <!-- 🔴 HIER ANPASSEN 4: Impressum mit Bot-Schutz -->
+        <footer>
+            <p>© 2026 Scizzo</p>
+            <details id="imp-toggle">
+                <summary>Impressum & Kontakt</summary>
+                <div class="impressum-text" id="imp-content">
+                    <!-- Inhalt wird erst beim Klicken durch JS generiert -->
+                </div>
+            </details>
+        </footer>
+    </div>
+
+    <!-- Javascript Bot-Schutz -->
+    <script>
+        document.getElementById('imp-toggle').addEventListener('toggle', function() {
+            // Führt den Code nur beim ersten Ausklappen aus
+            if(this.open && this.getAttribute('data-loaded') !== 'true') {
+                
+                // 🔴 HIER deine echten Daten in kleinen Stücken eintragen:
+                const v = "Marvin";    // z.B. Marvin
+                const n = "Quolke";   // z.B. Quolke
+                
+                const s = "Malsburger Weg";    // Straße
+                const h = "12";             // Hausnummer
+                
+                const p = "34379";          // PLZ
+                const o = "Calden";        // Ort
+                
+                const m1 = "kontakt.scizzo";          // E-Mail VOR dem @
+                const m2 = "gmail.com";     // E-Mail NACH dem @
+
+                // Das Skript setzt die Teile für den menschlichen Leser zusammen
+                const html = `
+                    <strong>Angaben gemäß § 5 DDG:</strong><br>
+                    ${v} ${n}<br>
+                    ${s} ${h}<br>
+                    ${p} ${o}<br><br>
+                    <strong>Kontakt:</strong><br>
+                    E-Mail: <a href="mailto:${m1}@${m2}" style="color:var(--text-muted);">${m1}&#64;${m2}</a>
+                `;
+                
+                document.getElementById('imp-content').innerHTML = html;
+                this.setAttribute('data-loaded', 'true');
+            }
+        });
+    </script>
+</body>
+</html>
